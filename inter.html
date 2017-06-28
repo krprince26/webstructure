@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="pi.css">
+  <script>
+  window.oncontextmenu = function () {
+return false;
+}
+
+function myFunction() { 
+    document.getElementById("myDialog").showModal(); 
+} 
+  </script>
+</head>
+<body>
+
+<section>
+  <h1 class="noselect">WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment,
+   formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+
+<!-- 
+for each piece of the pie chart create one div and give it
+a data-value attribute that represents the amount (in degrees) that
+represents its total visible portion, and a data-start attribute
+that matches the amount rotation for the starting  (the cumulative value amount of all the previous pieces).
+
+ 
+-->
+<div class="pie" data-start="0" data-value="30"></div>
+<div class="pie highlight" data-start="30" data-value="30"></div>
+<div class="pie" data-start="60" data-value="40"></div>
+<div class="pie big" data-start="100" data-value="260"></div>
+
+
+<dialog id="myDialog"><p>This is a dialog window</p>
+<img src="http://img.etimg.com/thumb/width-625,height-470,msid-57253413/aadhaar-playing-a-huge-role-in-contributing-to-digital-india-programme-neel-ratan-pwc.jpg"
+ height="200" width="200">
+
+</dialog>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<button onclick="myFunction()">Show dialog</button>
+</html>
+</body>
